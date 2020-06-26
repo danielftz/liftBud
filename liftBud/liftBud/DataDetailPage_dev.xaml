@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="liftBud.DataDetailPage_dev">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="35,0,35,0" Orientation="Vertical">
+                <Entry x:Name="id" Placeholder="Id" Keyboard="Numeric"/>
+
+                <Label x:Name ="male" Text= "Male">
+                    <Label.Triggers >
+                        <DataTrigger TargetType="Label" 
+                                Binding ="{Binding Source= {x:Reference sexSwitch},Path=IsToggled}"
+                                Value="False">
+                            <Setter Property="Text" Value="Female"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Switch x:Name="sexSwitch" HorizontalOptions="Start"/>
+
+                <Entry x:Name="age" Placeholder="Age" Keyboard="Numeric"/>
+                <Entry x:Name="height" Placeholder="Height(cm)" Keyboard="Numeric"/>
+                <Entry x:Name="weight" Placeholder="Weight(kg)" Keyboard="Numeric"/>
+                <Entry x:Name="measurement1" Placeholder="Measurement1(cm) waist" Keyboard="Numeric"/>
+                <Entry x:Name="measurement2" Placeholder="Measurement2(cm) neck" Keyboard="Numeric"/>
+                <Entry x:Name="measurement3" Placeholder="Measurement3(cm) hip(female only)" Keyboard="Numeric"/>
+                <Entry x:Name="bfPercent" Placeholder="Bodyfat Percentage" Keyboard="Numeric"/>
+
+                <Label x:Name ="model" Text ="Normal Mode">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference modeSwitch},Path=IsToggled}"
+                                 Value="False">
+                            <Setter Property="Text" Value="Advanced Mode"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Switch x:Name="modeSwitch" HorizontalOptions="Start"/>
+
+                <Entry x:Name="activity" Placeholder="Activity Level" Keyboard="Numeric"/>
+                <Entry x:Name="mealsPerDay" Placeholder="Meals Per Day" Keyboard="Numeric"/>
+                <Entry x:Name="goal" Placeholder="Select Goal" Keyboard="Numeric" />
+
+                <Label x:Name="lbm"/>
+                <Label x:Name="bmr"/>
+                <Label x:Name="tdee"/>
+                <Label x:Name="tdeeg"/>
+
+                <Button x:Name="bt_update" Text="Update" Clicked="bt_update_Clicked"/>
+                <Button x:Name="bt_delete" Text="Delete" Clicked="bt_delete_Clicked"/>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
