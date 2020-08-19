@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients" 
+             xmlns:local="clr-namespace:liftBud.Model" 
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="liftBud.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+
+        <AbsoluteLayout>
+            <magic:GradientView AbsoluteLayout.LayoutBounds="0,0,1,0.25" AbsoluteLayout.LayoutFlags="All">
+                <magic:GradientView.GradientSource>
+                    <magic:CssGradientSource>
+                        <x:String>
+                            <![CDATA[
+                                linear-gradient(229deg, rgba(248, 248, 248, 0.04) 0%, rgba(248, 248, 248, 0.04) 54%,rgba(0,0,0, 0.04) 54%, rgba(0,0,0, 0.04) 100%),linear-gradient(239deg, rgba(252, 252, 252, 0.04) 0%, rgba(252, 252, 252, 0.04) 66%,rgba(111, 111, 111, 0.04) 66%, rgba(111, 111, 111, 0.04) 100%),linear-gradient(141deg, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 44%,rgba(168, 168, 168, 0.04) 44%, rgba(168, 168, 168, 0.04) 100%),linear-gradient(287deg, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 78%,rgba(141, 141, 141, 0.04) 78%, rgba(141, 141, 141, 0.04) 100%),linear-gradient(90deg, rgb(41,94,143),rgb(24,168,65))
+                            ]]>
+                        </x:String>
+                    </magic:CssGradientSource>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+            
+            <Label AbsoluteLayout.LayoutBounds="25,0.03" 
+                   AbsoluteLayout.LayoutFlags="YProportional" 
+                   Text="Welcome" FontSize="40" 
+                   TextColor="{StaticResource light_text}"/>
+            <Label AbsoluteLayout.LayoutBounds="25,0.1" 
+                   AbsoluteLayout.LayoutFlags="YProportional" 
+                   Text="Your fitness journey starts here..." 
+                   FontSize="20" 
+                   TextColor="{StaticResource light_text}"/>
+
+            <sh:Shadows AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.65" AbsoluteLayout.LayoutFlags="All"
+                        Shades="{sh:SingleShade Offset='0,10', BlurRadius=30, Opacity=0.85,Color=LightGray}">
+                <Frame HasShadow="False" >
+                    <Grid RowSpacing="10" ColumnSpacing="25">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.4*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="0.2*"/>
+                            <RowDefinition Height="0.4*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="0.2*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Text="Email" Padding="10,0,10,0"/>
+                        <BoxView Grid.Row="1" BackgroundColor="{StaticResource enter_gray}" Margin="10,0,10,0"/>
+                        <local:NoUnderlineEntry x:Name="email" Grid.Row="1" Margin="17,0,17,0"/>
+
+                        <Label Grid.Row="3" Text="Password" Padding="10,0,10,0"/>
+                        <BoxView Grid.Row="4" BackgroundColor="{StaticResource enter_gray}" Margin="10,0,10,0"/>
+                        <local:NoUnderlineEntry x:Name="password" Grid.Row="4" Margin="17,0,17,0"/>
+
+                        <sh:Shadows Grid.Row="6" 
+                                    Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}" 
+                                    Padding="10,0,10,5">
+                            <Button x:Name="login"
+                                Text="Login/Register"
+                                TextColor="{StaticResource light_text}"
+                                BackgroundColor="{StaticResource progress_button_green}"/>
+                            
+                        </sh:Shadows>
+
+
+
+                        <sh:Shadows Grid.Row="7" 
+                                    Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}"
+                                    Padding="10,0,10,5">
+                            <Button x:Name="google"
+                                Text="Login with google"
+                                TextColor="{StaticResource dark_text}"
+                                BackgroundColor="{StaticResource light_text}"/>
+                        </sh:Shadows>
+
+                        <sh:Shadows Grid.Row="8" 
+                                    Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}"
+                                    Padding="10,0,10,5">
+                            <Button x:Name="Facebook"
+                                Text="Login with Facebook"
+                                TextColor="{StaticResource dark_text}"
+                                BackgroundColor="{StaticResource light_text}"/>
+                        </sh:Shadows>
+                            
+                    
+                    </Grid>
+                </Frame>
+            </sh:Shadows>
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

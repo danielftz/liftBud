@@ -2,6 +2,144 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "MagicGradients/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        }
+      },
+      "Sharpnado.MaterialFrame/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Presentation.Forms/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.MaterialFrame": "1.1.1",
+          "Sharpnado.Shadows": "1.1.0",
+          "Sharpnado.TaskLoaderView": "2.0.1",
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Shadows/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        }
+      },
+      "Sharpnado.TaskLoaderView/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        }
+      },
+      "Sharpnado.TaskMonitor/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/tizen-armel/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-armel"
+          },
+          "runtimes/tizen-x86/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-x86"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -97,7 +235,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.772": {
+      "Xamarin.Forms/4.8.0.1269": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -173,8 +311,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -222,8 +360,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MagicGradients": "1.1.1",
+          "Sharpnado.Presentation.Forms": "1.7.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms": "4.8.0.1269",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -235,6 +375,122 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "MagicGradients/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        }
+      },
+      "Sharpnado.MaterialFrame/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Presentation.Forms/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.MaterialFrame": "1.1.1",
+          "Sharpnado.Shadows": "1.1.0",
+          "Sharpnado.TaskLoaderView": "2.0.1",
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Shadows/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        }
+      },
+      "Sharpnado.TaskLoaderView/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        }
+      },
+      "Sharpnado.TaskMonitor/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -330,7 +586,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.772": {
+      "Xamarin.Forms/4.8.0.1269": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -406,8 +662,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -455,8 +711,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MagicGradients": "1.1.1",
+          "Sharpnado.Presentation.Forms": "1.7.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms": "4.8.0.1269",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -468,6 +726,125 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "MagicGradients/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        }
+      },
+      "Sharpnado.MaterialFrame/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Presentation.Forms/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.MaterialFrame": "1.1.1",
+          "Sharpnado.Shadows": "1.1.0",
+          "Sharpnado.TaskLoaderView": "2.0.1",
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Shadows/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        }
+      },
+      "Sharpnado.TaskLoaderView/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        }
+      },
+      "Sharpnado.TaskMonitor/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/libSkiaSharp.dll": {}
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -563,7 +940,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.772": {
+      "Xamarin.Forms/4.8.0.1269": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -639,8 +1016,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -688,8 +1065,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MagicGradients": "1.1.1",
+          "Sharpnado.Presentation.Forms": "1.7.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms": "4.8.0.1269",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -701,6 +1080,125 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "MagicGradients/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MagicGradients.dll": {}
+        }
+      },
+      "Sharpnado.MaterialFrame/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Presentation.Forms/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.MaterialFrame": "1.1.1",
+          "Sharpnado.Shadows": "1.1.0",
+          "Sharpnado.TaskLoaderView": "2.0.1",
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll": {}
+        }
+      },
+      "Sharpnado.Shadows/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.dll": {},
+          "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll": {}
+        }
+      },
+      "Sharpnado.TaskLoaderView/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sharpnado.TaskMonitor": "1.0.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll": {}
+        }
+      },
+      "Sharpnado.TaskMonitor/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/libSkiaSharp.dll": {}
+        }
+      },
+      "SkiaSharp.Views/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.1.1",
+          "SkiaSharp.Views": "1.68.1.1",
+          "Xamarin.Forms": "4.0.0.540366"
+        },
+        "compile": {
+          "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -796,7 +1294,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.772": {
+      "Xamarin.Forms/4.8.0.1269": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -872,8 +1370,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -921,8 +1419,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MagicGradients": "1.1.1",
+          "Sharpnado.Presentation.Forms": "1.7.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms": "4.8.0.1269",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -935,6 +1435,243 @@
     }
   },
   "libraries": {
+    "MagicGradients/1.1.1": {
+      "sha512": "KxDIaqR19GE0kynUyRyrmDEabvLUoj2tlz+QSuStVltJxnrGBB8/83Y5bH5zEyDoPcBbF8qGlPTpZztS5iHCWA==",
+      "type": "package",
+      "path": "magicgradients/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/netstandard2.0/MagicGradients.dll",
+        "magicgradients.1.1.1.nupkg.sha512",
+        "magicgradients.nuspec"
+      ]
+    },
+    "Sharpnado.MaterialFrame/1.1.1": {
+      "sha512": "nUj8WipMWuc5sJcmfrPm6aIDZ7wT15V2Ev4oV1HBWRKnoc1pwAoe53zyiT0bVXnDF0dAfd++Gm0CyGhzixgxug==",
+      "type": "package",
+      "path": "sharpnado.materialframe/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/material_frame.png",
+        "lib/MonoAndroid10.0/Sharpnado.MaterialFrame.Android.dll",
+        "lib/MonoAndroid10.0/Sharpnado.MaterialFrame.Android.pdb",
+        "lib/MonoAndroid10.0/Sharpnado.MaterialFrame.dll",
+        "lib/MonoAndroid10.0/Sharpnado.MaterialFrame.pdb",
+        "lib/MonoAndroid10/Sharpnado.MaterialFrame.Android.dll",
+        "lib/MonoAndroid10/Sharpnado.MaterialFrame.Android.pdb",
+        "lib/MonoAndroid10/Sharpnado.MaterialFrame.dll",
+        "lib/MonoAndroid10/Sharpnado.MaterialFrame.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.dll",
+        "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.dll",
+        "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.iOS.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.MaterialFrame.pdb",
+        "lib/netstandard2.0/Sharpnado.MaterialFrame.dll",
+        "lib/netstandard2.0/Sharpnado.MaterialFrame.pdb",
+        "lib/uap10.0.16299/Sharpnado.MaterialFrame.UWP.dll",
+        "lib/uap10.0.16299/Sharpnado.MaterialFrame.UWP.pdb",
+        "lib/uap10.0.16299/Sharpnado.MaterialFrame.dll",
+        "lib/uap10.0.16299/Sharpnado.MaterialFrame.pdb",
+        "sharpnado.materialframe.1.1.1.nupkg.sha512",
+        "sharpnado.materialframe.nuspec"
+      ]
+    },
+    "Sharpnado.Presentation.Forms/1.7.1": {
+      "sha512": "RZfdAy0gMxXxhws0PAbuv75YSocpHIO0MyT4lhIfU5vs95ehJ+lW2rIVO1oeiglmHG9q4z1wdl9hccQ4WvL35Q==",
+      "type": "package",
+      "path": "sharpnado.presentation.forms/1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/sharpnado.png",
+        "lib/MonoAndroid10.0/Sharpnado.Presentation.Forms.Droid.dll",
+        "lib/MonoAndroid10.0/Sharpnado.Presentation.Forms.Droid.pdb",
+        "lib/MonoAndroid10.0/Sharpnado.Presentation.Forms.dll",
+        "lib/MonoAndroid10.0/Sharpnado.Presentation.Forms.pdb",
+        "lib/MonoAndroid10/Sharpnado.Presentation.Forms.Droid.dll",
+        "lib/MonoAndroid10/Sharpnado.Presentation.Forms.Droid.pdb",
+        "lib/MonoAndroid10/Sharpnado.Presentation.Forms.dll",
+        "lib/MonoAndroid10/Sharpnado.Presentation.Forms.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.dll",
+        "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.dll",
+        "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.iOS.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.Presentation.Forms.pdb",
+        "lib/netstandard2.0/Sharpnado.Presentation.Forms.dll",
+        "lib/netstandard2.0/Sharpnado.Presentation.Forms.pdb",
+        "sharpnado.presentation.forms.1.7.1.nupkg.sha512",
+        "sharpnado.presentation.forms.nuspec"
+      ]
+    },
+    "Sharpnado.Shadows/1.1.0": {
+      "sha512": "m4IZ2HYkyUeBq4YkEb9wLRNfkipoovld6EqEsPsEAm5FwNVeEZrN8jiGFEN/A3/ZofaqRXrWf3ACVzbiNjPfCQ==",
+      "type": "package",
+      "path": "sharpnado.shadows/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/shadows.png",
+        "lib/MonoAndroid10/Sharpnado.Shadows.Android.dll",
+        "lib/MonoAndroid10/Sharpnado.Shadows.Android.pdb",
+        "lib/MonoAndroid10/Sharpnado.Shadows.dll",
+        "lib/MonoAndroid10/Sharpnado.Shadows.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.dll",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.pdb",
+        "lib/netstandard2.0/Sharpnado.Shadows.dll",
+        "lib/netstandard2.0/Sharpnado.Shadows.pdb",
+        "lib/tizen40/Sharpnado.Shadows.Tizen.dll",
+        "lib/tizen40/Sharpnado.Shadows.Tizen.pdb",
+        "lib/tizen40/Sharpnado.Shadows.dll",
+        "lib/tizen40/Sharpnado.Shadows.pdb",
+        "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll",
+        "lib/uap10.0.16299/Sharpnado.Shadows.UWP.pdb",
+        "lib/uap10.0.16299/Sharpnado.Shadows.dll",
+        "lib/uap10.0.16299/Sharpnado.Shadows.pdb",
+        "sharpnado.shadows.1.1.0.nupkg.sha512",
+        "sharpnado.shadows.nuspec"
+      ]
+    },
+    "Sharpnado.TaskLoaderView/2.0.1": {
+      "sha512": "EfIsO8Urcc7eXxG7HwZYIPJikt/a+gRTGPAVU6uSdAs7LeU5j6V7eAPhd9saHMSaalPGm+iRcnG1J48NaP9NPg==",
+      "type": "package",
+      "path": "sharpnado.taskloaderview/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Sharpnado.TaskLoaderView.dll",
+        "sharpnado.taskloaderview.2.0.1.nupkg.sha512",
+        "sharpnado.taskloaderview.nuspec"
+      ]
+    },
+    "Sharpnado.TaskMonitor/1.0.0": {
+      "sha512": "Yc3P4jOWrF3IVpJSfEookkGkmkbcdvyp/2WLz8dNR5b7/7iyI7tDo64HnyNJ5HVy45g8nrPaGwuauG6rHhZAZg==",
+      "type": "package",
+      "path": "sharpnado.taskmonitor/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Sharpnado.TaskMonitor.dll",
+        "sharpnado.taskmonitor.1.0.0.nupkg.sha512",
+        "sharpnado.taskmonitor.nuspec"
+      ]
+    },
+    "SkiaSharp/1.68.1.1": {
+      "sha512": "fJteGIKAMmLD9tSQgdvZqLqECub6B55pK1MH5QyanLOr8JQ8uUMKKcrAcpocNnmIS/YsUJOL4AD7dO6mAwP7mQ==",
+      "type": "package",
+      "path": "skiasharp/1.68.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net45/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "buildTransitive/net45/SkiaSharp.targets",
+        "lib/MonoAndroid/SkiaSharp.dll",
+        "lib/MonoAndroid/SkiaSharp.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.xml",
+        "lib/Xamarin.iOS/SkiaSharp.dll",
+        "lib/Xamarin.iOS/SkiaSharp.xml",
+        "lib/net45/SkiaSharp.dll",
+        "lib/net45/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0/SkiaSharp.dll",
+        "lib/uap10.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/tizen-armel/native/libSkiaSharp.so",
+        "runtimes/tizen-x86/native/libSkiaSharp.so",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.1.68.1.1.nupkg.sha512",
+        "skiasharp.nuspec",
+        "xamarin.interactive/SkiaSharp.Workbooks.dll"
+      ]
+    },
+    "SkiaSharp.Views/1.68.1.1": {
+      "sha512": "qpRPbhLFwR6DjxUwzdqWw8BMgKFQ7MMdQdxUt2K0DvsFBiklK6vBBjIkOh58yPLYix1LPXgfD7M6KFO/G4T7OA==",
+      "type": "package",
+      "path": "skiasharp.views/1.68.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.dll",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.xml",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.xml",
+        "lib/net45/SkiaSharp.Views.Desktop.dll",
+        "lib/net45/SkiaSharp.Views.Desktop.xml",
+        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
+        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
+        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
+        "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "skiasharp.views.1.68.1.1.nupkg.sha512",
+        "skiasharp.views.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.Forms/1.68.1.1": {
+      "sha512": "ahwhImos0hRa4iGQY2M0HZLcvJZNFVe3KFaod2tn1/hPevGOplPReWykfodMLksRzfm1SmxU7hxd121XupPCHw==",
+      "type": "package",
+      "path": "skiasharp.views.forms/1.68.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/net45/SkiaSharp.Views.Forms.targets",
+        "lib/MonoAndroid/SkiaSharp.Views.Forms.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Forms.dll",
+        "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll",
+        "lib/tizen40/SkiaSharp.Views.Forms.dll",
+        "lib/uap10.0/SkiaSharp.Views.Forms.dll",
+        "ref/MonoAndroid/SkiaSharp.Views.Forms.dll",
+        "ref/MonoAndroid/SkiaSharp.Views.Forms.xml",
+        "ref/Xamarin.Mac20/SkiaSharp.Views.Forms.dll",
+        "ref/Xamarin.Mac20/SkiaSharp.Views.Forms.xml",
+        "ref/Xamarin.iOS/SkiaSharp.Views.Forms.dll",
+        "ref/Xamarin.iOS/SkiaSharp.Views.Forms.xml",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.dll",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.xml",
+        "ref/tizen40/SkiaSharp.Views.Forms.dll",
+        "ref/tizen40/SkiaSharp.Views.Forms.xml",
+        "ref/uap10.0/SkiaSharp.Views.Forms.dll",
+        "ref/uap10.0/SkiaSharp.Views.Forms.xml",
+        "skiasharp.views.forms.1.68.1.1.nupkg.sha512",
+        "skiasharp.views.forms.nuspec"
+      ]
+    },
     "sqlite-net-pcl/1.7.335": {
       "sha512": "0A9YNPbp66aB+Sitxmh9lq1KDtD4+EBPfdtnYN8WenvQqh5dNgMxUV7kaEG6EXYTi4zBxcsDKpyYJzbViWJXtw==",
       "type": "package",
@@ -1110,13 +1847,14 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.6.0.772": {
-      "sha512": "tRxuc7x0PgLYZRjRvs2mm3D8KnkKgCCYOuXHnqOjcXWUJWBDmexM8R7LxWPyEBSLMU55SGl+RRcFvHZcOSsgMA==",
+    "Xamarin.Forms/4.8.0.1269": {
+      "sha512": "3UFTlfJvF9l8HB+gWVmYUEVRSPU+c3H0G/h09RVG8/P5i/QRiDBg/YHEGfPR3HNuWlJ9S9TgZjrFruTUS1ZYiQ==",
       "type": "package",
-      "path": "xamarin.forms/4.6.0.772",
+      "path": "xamarin.forms/4.8.0.1269",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Assets/xamarin_128x128.png",
         "build/MonoAndroid10/proguard.cfg",
         "build/XCODE10/Xamarin.Forms.Platform.iOS.dll",
         "build/XCODE10/Xamarin.Forms.Platform.iOS.pdb",
@@ -1196,8 +1934,8 @@
         "lib/MonoAndroid10.0/ja/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid10.0/ko/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10.0/ko/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid10.0/ru/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10.0/ru/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Core.xml",
@@ -1229,8 +1967,8 @@
         "lib/MonoAndroid90/ja/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/ko/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid90/ko/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid90/pt-br/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid90/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/ru/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid90/ru/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/zh-Hans/Xamarin.Forms.Core.xml",
@@ -1284,9 +2022,9 @@
         "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
-        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Core.xml",
-        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll",
-        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/ru/Xamarin.Forms.Core.xml",
@@ -1335,8 +2073,8 @@
         "lib/netstandard2.0/ja/Xamarin.Forms.Xaml.xml",
         "lib/netstandard2.0/ko/Xamarin.Forms.Core.xml",
         "lib/netstandard2.0/ko/Xamarin.Forms.Xaml.xml",
-        "lib/netstandard2.0/pt-br/Xamarin.Forms.Core.xml",
-        "lib/netstandard2.0/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/netstandard2.0/ru/Xamarin.Forms.Core.xml",
         "lib/netstandard2.0/ru/Xamarin.Forms.Xaml.xml",
         "lib/netstandard2.0/zh-Hans/Xamarin.Forms.Core.xml",
@@ -1419,7 +2157,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.6.0.772.nupkg.sha512",
+        "xamarin.forms.4.8.0.1269.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1431,8 +2169,9 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "Sharpnado.Presentation.Forms >= 1.7.1",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.6.0.772",
+      "Xamarin.Forms >= 4.8.0.1269",
       "liftBud >= 1.0.0",
       "sqlite-net-pcl >= 1.7.335"
     ]
@@ -1479,13 +2218,17 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Sharpnado.Presentation.Forms": {
+            "target": "Package",
+            "version": "[1.7.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.6.0.772, )"
+            "version": "[4.8.0.1269, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

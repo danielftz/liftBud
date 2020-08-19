@@ -5,9 +5,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:local="clr-namespace:liftBud"
-             x:Class="liftBud.Homepage_dev">
+             x:Class="liftBud.Homepage_dev"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.IsSwipePagingEnabled="False">
 
-    <local:DataEntry_dev Title="DataEntry"/>
+    
+    <local:DataEntry_grid Title="Data Entry"/>
     <local:Records_dev Title="Records"/>
     <local:Calculations_dev Title="Calculation"/>
 </TabbedPage>

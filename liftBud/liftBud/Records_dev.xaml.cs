@@ -36,7 +36,7 @@ namespace liftBud
         private void PersonData_List_Selected(object sender, SelectedItemChangedEventArgs e)
         {
             PersonData selected_data = PersonData_List.SelectedItem as PersonData;
-            if (selected_data != null) Navigation.PushAsync(new DataDetailPage_dev(selected_data));
+            if (selected_data != null) Navigation.PushAsync(new RecordDetailPage_dev(selected_data));
         }
 
         private void Reset_Table_Clicked(object sender, EventArgs e)

@@ -28,7 +28,10 @@ namespace liftBud.iOS
             string folderPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "Library");
             string fullPath = System.IO.Path.Combine(folderPath, dbName);
 
-            LoadApplication(new App(fullPath));
+            Sharpnado.Shades.iOS.iOSShadowsRenderer.Initialize();
+
+            //LoadApplication(new App(fullPath));
+            LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
         }

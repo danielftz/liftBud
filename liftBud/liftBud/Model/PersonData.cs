@@ -12,23 +12,23 @@ namespace liftBud.Model
         [PrimaryKey]
         public DateTime CurrentDateTime { get; set; }
 
-        public int Id { get; set; } = -1;
+        public String Id { get; set; }
 
         public bool Male { get; set; } = true;
 
-        public int Age { get; set; } = -1;
+        public int Age { get; set; } = 0;
 
-        public int Height { get; set; } = -1; //cm
+        public double Height { get; set; } = 0; //cm
 
-        public int Weight { get; set; } = -1; //kg
+        public double Weight { get; set; } = 0; //kg
 
-        public double Measurement1 { get; set; } = -1; //waist cm
+        public double Waist_m { get; set; } = 0; //waist cm
 
-        public double Measurement2 { get; set; } = -1; //neck cm
+        public double Neck_m { get; set; } = 0; //neck cm
 
-        public double Measurement3 { get; set; } = -1; //hip(female) cm
+        public double Hip_m { get; set; } = 0; //hip(female) cm
 
-        double _BFPercent = -1f;
+        double _BFPercent = 0;
         public double BFPercent //body fat percentage 
         {
             get
@@ -40,19 +40,19 @@ namespace liftBud.Model
             {
                 if (this.Male) //set male body fat percentage 
                 {
-                    if (this.Measurement1 != -1 && this.Measurement2 != -1 && this.Height != -1)
+                    if (this.Waist_m != 0 && this.Neck_m != 0 && this.Height != 0)
                     {
-                        this._BFPercent = 495F / (1.0324 - 0.19077 * Math.Log10(this.Measurement1 - this.Measurement2)
+                        this._BFPercent = 495F / (1.0324 - 0.19077 * Math.Log10(this.Waist_m - this.Neck_m)
                             + 0.15456 * Math.Log10((double)this.Height)) - 450F;
                     }
                     else this._BFPercent = value;
                 }
                 else // set female body fat percentage 
                 {
-                    if (this.Measurement1 != -1 && this.Measurement2 != -1 
-                        && this.Measurement3 != -1 && this.Height != -1)
+                    if (this.Waist_m != 0 && this.Neck_m != 0 
+                        && this.Hip_m != 0 && this.Height != 0)
                     {
-                        this._BFPercent = 495F / (1.29579 - 0.35004 * Math.Log10(this.Measurement1 + this.Measurement3 - this.Measurement2)
+                        this._BFPercent = 495F / (1.29579 - 0.35004 * Math.Log10(this.Waist_m + this.Hip_m - this.Neck_m)
                             + 0.22100 * Math.Log10((double)this.Height)) - 450F;
                     }
                     else this._BFPercent = value;
@@ -61,7 +61,7 @@ namespace liftBud.Model
             }
         }
 
-        double _LBM = -1f;
+        double _LBM = 0;
         //must manually set
         public double LBM//Lean body mass
         {
@@ -73,13 +73,13 @@ namespace liftBud.Model
             }
 
             set {
-                if (this._BFPercent != -1 && this.Weight != -1)
+                if (this._BFPercent != 0 && this.Weight != 0)
                 {
                     this._LBM = (double)this.Weight * (1f - this._BFPercent / 100);
                 }
             }
         }
-        double _FFMI = -1f; 
+        double _FFMI = 0; 
         public double FFMI//fat free mass index
         {
             get
@@ -87,7 +87,7 @@ namespace liftBud.Model
                 return this._FFMI;
             }
             set {
-                if (this._LBM != -1 && this.Height != -1)
+                if (this._LBM != 0 && this.Height != 0)
                 {
                     this._FFMI = this._LBM * Math.Pow(((double)this.Height / 100), -2f) + 6.1 * (1.8 - (double)this.Height / 100);
 
@@ -98,7 +98,7 @@ namespace liftBud.Model
 
         public bool NormalModel { get; set; } = true;
 
-        double _activity_modifier = -1; //activity modifier
+        double _activity_modifier = 0; //activity modifier
         public int Activity
         {
             get 
@@ -116,7 +116,7 @@ namespace liftBud.Model
                     case 1.9:
                         return 4;
                     default:
-                        return -1;
+                        return 0;
                 }
             }
             set
@@ -139,13 +139,13 @@ namespace liftBud.Model
                         this._activity_modifier = 1.9;
                         break;
                     default:
-                        this._activity_modifier = -1;
+                        this._activity_modifier = 1.2;
                         break;
                 }
             }
         }
 
-        int _BMR = -1;
+        int _BMR = 0;
         //must manually set
         public int BMR
         {
@@ -156,7 +156,7 @@ namespace liftBud.Model
 
             }
             set {
-                if (this.Weight != -1 && this.Height != -1 && this.Age != -1 && this._LBM != -1)
+                if (this.Weight != 0 && this.Height != 0 && this.Age != 0 && this._LBM != 0)
                 {
                     if (this.NormalModel && this.Male)//mifflin-st.jeor model 
                     {
@@ -177,7 +177,7 @@ namespace liftBud.Model
             }
         }
 
-        int _TDEE=-1;
+        int _TDEE=0;
         //must manually set
         public int TDEE //total daily energy expenditure
         {
@@ -188,7 +188,7 @@ namespace liftBud.Model
             }
             set 
             {
-                if (this._BMR != -1 && this._activity_modifier != -1)
+                if (this._BMR != 0 && this._activity_modifier != 0)
                 {
                     this._TDEE = (int)Math.Round(this._BMR * this._activity_modifier);
                 }
@@ -196,7 +196,7 @@ namespace liftBud.Model
         }
 
          
-        double _goal_modifier = -1;
+        double _goal_modifier = 1.1;
         public int Goal
         {
             get
@@ -207,18 +207,12 @@ namespace liftBud.Model
                         return 0;
                     case 1:
                         return 1;
-                    case 0.95:
-                        return 2;
-                    case 0.9:
-                        return 3;
                     case 0.85:
-                        return 4;
-                    case 0.8:
-                        return 5;
+                        return 2;
                     case 0.75:
-                        return 6;
+                        return 3;
                     default:
-                        return -1;
+                        return 0;
                 }
             }
             set
@@ -232,28 +226,19 @@ namespace liftBud.Model
                         this._goal_modifier = 1;
                         break;
                     case 2:
-                        this._goal_modifier = 0.95;
-                        break;
-                    case 3:
-                        this._goal_modifier = 0.9;
-                        break;
-                    case 4:
                         this._goal_modifier = 0.85;
                         break;
-                    case 5:
-                        this._goal_modifier = 0.8;
-                        break;
-                    case 6:
+                    case 3:
                         this._goal_modifier = 0.75;
                         break;
                     default:
-                        this._goal_modifier = -1;
+                        this._goal_modifier = 1.1;
                         break;
                 }
             }
         }
 
-        int _TDEEG = -1;
+        int _TDEEG = 0;
         //must manually set
         public int TDEEG //total daily energy expenditure based on goal
         {
@@ -265,18 +250,65 @@ namespace liftBud.Model
             }
             set 
             {
-                if (this._TDEE != -1 && this._goal_modifier != -1)
+                if (this._TDEE != 0 && this._goal_modifier != 1.1)
                 {
                     this._TDEEG = (int)Math.Round(this._TDEE * this._goal_modifier);
                 }
             }
         }
 
-        public int MealsPerDay { get; set; } = -1;
+        public int MealsPerDay { get; set; } = 3;
 
         private int fat_gkCal = 9;
         private int carb_gkCal = 4;
         private int protein_gkCal = 4;
+        private double auto_protein_modifier = 1.6;
+
+        int _fat_amount;
+        int _carb_amount;
+        int _protein_amount;
+
+        public int Protein_amount
+        {
+            get
+            {
+                return this._protein_amount;
+            }
+            set
+            {
+                this._protein_amount = (int)Math.Round(this.Weight * this.auto_protein_modifier);
+            }
+        }
+        public int Fat_amount
+        {
+            get
+            {
+                return this._fat_amount;
+            }
+            set
+            {
+                var protein_calories = (double)Math.Round(this.Weight * this.auto_protein_modifier * this.protein_gkCal);
+                var fat_percentage = (1 - protein_calories / this._TDEEG) * 0.36;
+                this._fat_amount = (int)Math.Round(fat_percentage * this._TDEEG / this.fat_gkCal);
+
+            }
+        }
+
+        public int Carb_amount
+        {
+            get
+            {
+                return this._carb_amount;
+            }
+            set
+            {
+                var protein_calories = (double)Math.Round(this.Weight * this.auto_protein_modifier * this.protein_gkCal);
+                var carb_percentage = (1 - protein_calories / this._TDEEG) * 0.64;
+                this._carb_amount = (int)Math.Round(carb_percentage * this._TDEEG / this.carb_gkCal);
+            }
+        }
+
+
 
 
 

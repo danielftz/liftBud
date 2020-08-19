@@ -2,10 +2,23 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:liftBud.Model" 
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
              mc:Ignorable="d"
              x:Class="liftBud.App">
     <Application.Resources>
+        <Color x:Key="light_text">#E9FEF1</Color>
+        <Color x:Key="dark_text">#3B543C</Color>
+        <Color x:Key="enter_gray">#E5E5E5</Color>
+        <Color x:Key="display_gray">#BDBDBD</Color>
+        <Color x:Key="symbol_gray">#828282</Color>
+        <Color x:Key="glance_gray">#F2F2F2</Color>
+        <Color x:Key="progress_button_green">#12A67C</Color>
+        <Color x:Key="utility_button_green">#1CC989</Color>
+        <Color x:Key="title_green">#18A841</Color>
+
+
 
     </Application.Resources>
 </Application>

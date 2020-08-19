@@ -1,9 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "lMcChVrf9OSPAJJR0ZdKB3vUHs+LV4PY6oIwomrCfb+O4tQsTz0I9VCH7P+uyKv8cWx6b9IkQdspg8lo+RKgzQ==",
+  "dgSpecHash": "qkbTPvrCsMWJrPKtlojJlcBs6X1bpZMS6Kc/FGV9k8DvGVRtmrOeasGASVFTGgtFFe9pIWa6MbSSUMxvJm8nXQ==",
   "success": true,
   "projectFilePath": "E:\\prj\\liftBud\\liftBud\\liftBud.Android\\liftBud.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\magicgradients\\1.1.1\\magicgradients.1.1.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\sharpnado.materialframe\\1.1.1\\sharpnado.materialframe.1.1.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\sharpnado.presentation.forms\\1.7.1\\sharpnado.presentation.forms.1.7.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\sharpnado.shadows\\1.1.0\\sharpnado.shadows.1.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\sharpnado.taskloaderview\\2.0.1\\sharpnado.taskloaderview.2.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\sharpnado.taskmonitor\\1.0.0\\sharpnado.taskmonitor.1.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
@@ -50,7 +59,7 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\xamarin.forms\\4.6.0.772\\xamarin.forms.4.6.0.772.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"
   ],
   "logs": []
 }
