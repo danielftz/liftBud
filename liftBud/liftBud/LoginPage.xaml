@@ -78,7 +78,8 @@
                             <Button x:Name="login"
                                 Text="Login/Register"
                                 TextColor="{StaticResource light_text}"
-                                BackgroundColor="{StaticResource progress_button_green}"/>
+                                BackgroundColor="{StaticResource progress_button_green}"
+                                    FontSize="{StaticResource ButtonFontSize}"/>
                             
                         </sh:Shadows>
 
@@ -106,6 +107,9 @@
                     </Grid>
                 </Frame>
             </sh:Shadows>
+
+            <Button x:Name="help" AbsoluteLayout.LayoutBounds="0.5,0.9" AbsoluteLayout.LayoutFlags="PositionProportional" 
+                    Text="Need help log in?" BackgroundColor="White" TextColor="{StaticResource display_gray}" FontSize="10"/>
 
 
         </AbsoluteLayout>

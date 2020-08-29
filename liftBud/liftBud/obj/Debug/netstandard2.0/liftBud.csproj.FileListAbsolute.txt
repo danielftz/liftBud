@@ -17,3 +17,4 @@ E:\prj\liftBud\liftBud\liftBud\obj\Debug\netstandard2.0\XamlC.stamp
 E:\prj\liftBud\liftBud\liftBud\obj\Debug\netstandard2.0\liftBud.dll
 E:\prj\liftBud\liftBud\liftBud\obj\Debug\netstandard2.0\ref\liftBud.dll
 E:\prj\liftBud\liftBud\liftBud\obj\Debug\netstandard2.0\liftBud.pdb
+E:\prj\liftBud\liftBud\liftBud\obj\Debug\netstandard2.0\Setup1_page.xaml.g.cs

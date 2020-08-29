@@ -12,7 +12,7 @@ namespace liftBud
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new Setup1_page());
         }
 
         public App(string databaseLocation)

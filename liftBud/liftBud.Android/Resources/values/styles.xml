@@ -3,6 +3,7 @@
 
   <style name="MainTheme" parent="MainTheme.Base">
     <item name="android:textAllCaps">false</item>
+    <item name="android:statusBarColor">#12A67C</item>
   </style>
   <!-- Base theme applied no matter what API -->
   <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">

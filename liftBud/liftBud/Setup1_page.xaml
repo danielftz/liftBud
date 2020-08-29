@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="liftBud.Setup1_page"
+             ControlTemplate="{StaticResource setup}"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+    <AbsoluteLayout>
+        <Label AbsoluteLayout.LayoutBounds="25,0.03" 
+            AbsoluteLayout.LayoutFlags="YProportional" 
+            Text="Profile Setup" FontSize="40" 
+            TextColor="{StaticResource light_text}"/>
+        <Label AbsoluteLayout.LayoutBounds="25,0.1"
+            AbsoluteLayout.LayoutFlags="YProportional" 
+            Margin="0,0,31,0"
+            Text="We will make a meal plan and workout plan for you shortly..." 
+            FontSize="20" 
+            TextColor="{StaticResource light_text}"/>
+        <sh:Shadows AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.65" AbsoluteLayout.LayoutFlags="All"
+                        Shades="{sh:SingleShade Offset='0,10', BlurRadius=30, Opacity=0.85,Color=LightGray}">
+            <Frame HasShadow="False">
+                <Grid RowSpacing="10" ColumnSpacing="25">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0.3*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Text="Birthday" Grid.ColumnSpan="2"/>
+                    
+                    <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*"/>
+                            <ColumnDefinition Width="0.8*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry Grid.Column="0" Grid.Row="0" Placeholder="DD"/>
+                        <Entry Grid.Column="1" Grid.Row="0" Placeholder="MM"/>
+                        <Entry Grid.Column="2" Grid.Row="0" Placeholder="YYYY"/>
+                    </Grid>
+
+                    <Label Grid.Row="2" Text="Sex" Grid.ColumnSpan="2"/>
+
+                    <Grid Grid.Row="3" Grid.ColumnSpan="2">
+                        <Button Grid.Column="0" Text="Male"/>
+                        <Button Grid.Column="1" Text="Female"/>
+                    </Grid>
+
+                    <Label Grid.Row="4" Grid.Column="0" Text="Weight"/>
+                    <Label Grid.Row="4" Grid.Column="1" Text="(kg)"/>
+                    <Grid Grid.Row="5" Grid.ColumnSpan="2">
+                        <Entry Grid.Column="0"/>
+                        <Switch Grid.Column="1"/>
+                    </Grid>
+
+                    <Label Grid.Row="6" Grid.Column="0" Text="Height"/>
+                    <Label Grid.Row="6" Grid.Column="1" Text="(cm)"/>
+                    <Grid Grid.Row="7" Grid.ColumnSpan="2">
+                        <Entry Grid.Column="0"/>
+                        <Switch Grid.Column="1"/>
+                    </Grid>
+
+                    <Button Grid.Row="8" Grid.ColumnSpan="2" Text="Next"/>
+                </Grid>
+            </Frame>
+        </sh:Shadows>
+
+        <Label AbsoluteLayout.LayoutBounds="0.5,0.9" AbsoluteLayout.LayoutFlags="PositionProportional" Text="1/5"/>
+
+    </AbsoluteLayout>    
+    
+</ContentPage>
