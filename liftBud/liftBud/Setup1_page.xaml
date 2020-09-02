@@ -16,6 +16,7 @@
 
     </ContentPage.Resources>
 
+    <ContentPage.Content>
     <AbsoluteLayout>
         <Label AbsoluteLayout.LayoutBounds="25,0.03" 
             AbsoluteLayout.LayoutFlags="YProportional" 
@@ -76,6 +77,7 @@
 
         <Label AbsoluteLayout.LayoutBounds="0.5,0.9" AbsoluteLayout.LayoutFlags="PositionProportional" Text="1/5"/>
 
-    </AbsoluteLayout>    
-    
+    </AbsoluteLayout>
+    </ContentPage.Content>
+
 </ContentPage>
