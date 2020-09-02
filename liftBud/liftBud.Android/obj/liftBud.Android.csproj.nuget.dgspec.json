@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud.Android/liftBud.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud.Android/liftBud.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud.Android/liftBud.Android.csproj",
+        "projectName": "liftBud.Android",
+        "projectPath": "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud.Android/liftBud.Android.csproj",
+        "packagesPath": "/Users/vanwu/.nuget/packages/",
+        "outputPath": "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/vanwu/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/liftBud.csproj": {
+                "projectPath": "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/liftBud.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Sharpnado.Presentation.Forms": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1269, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/liftBud.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/liftBud.csproj",
+        "projectName": "liftBud",
+        "projectPath": "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/liftBud.csproj",
+        "packagesPath": "/Users/vanwu/.nuget/packages/",
+        "outputPath": "/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vanwu/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MagicGradients": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Sharpnado.Presentation.Forms": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1269, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

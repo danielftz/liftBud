@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             xmlns:local="clr-namespace:liftBud.Model"
+             x:Class="liftBud.Setup1_page"
+             ControlTemplate="{StaticResource setup}"
+             NavigationPage.HasNavigationBar="False"
+             >
+     <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+
+    
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            
+           
+            <Label AbsoluteLayout.LayoutBounds="25,0.03" 
+                   AbsoluteLayout.LayoutFlags="YProportional" 
+                   Text="Profile Setup" FontSize="40" 
+                   TextColor="{StaticResource light_text}"/>
+
+            
+            <Label AbsoluteLayout.LayoutBounds="25,0.1" 
+                   AbsoluteLayout.LayoutFlags="YProportional" 
+                   Text="We will make a meal plan and workout plan for you shortly..." 
+                   FontSize="20" 
+                   TextColor="{StaticResource light_text}" Margin="0,0,31,0"/>
+            
+
+            <sh:Shadows AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.65" AbsoluteLayout.LayoutFlags="All"
+                        Shades="{sh:SingleShade Offset='0,10', BlurRadius=30, Opacity=0.85,Color=LightGray}">
+                
+
+                <Frame HasShadow="False">
+                    <Grid RowSpacing="10" ColumnSpacing="25" Margin="25">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions> 
+
+                        <StackLayout Grid.Row="0">
+                            <Label Text="Birthday"/>
+                            <StackLayout Orientation="Horizontal">
+                    
+                            <BoxView BackgroundColor="{StaticResource enter_gray}" HorizontalOptions="StartAndExpand"/>
+                            <local:NoUnderlineEntry/>
+
+                            <BoxView BackgroundColor="{StaticResource enter_gray}" HorizontalOptions="FillAndExpand"/>
+                            <local:NoUnderlineEntry/>
+
+                            <BoxView BackgroundColor="{StaticResource enter_gray}" HorizontalOptions="EndAndExpand"/>
+                            <local:NoUnderlineEntry/>
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="1">
+                            <Label Text="Sex"/>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Button Text=" Male "
+                                    TextColor="{StaticResource symbol_gray}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"
+                                        HorizontalOptions="FillAndExpand"
+                                        />
+
+                                <Button Text="Female"
+                                    TextColor="{StaticResource symbol_gray}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"
+                                        HorizontalOptions="FillAndExpand"
+                                        />
+
+                                
+                            </StackLayout>
+                 
+                            
+
+                        </StackLayout>
+                        
+                        <StackLayout Grid.Row="2">
+                             <StackLayout Orientation="Horizontal">
+                                <Label Text="Weight" HorizontalOptions="FillAndExpand"/>
+                                <Label Text="(kg)" HorizontalOptions="End"/>
+
+                            </StackLayout>
+                            
+
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView BackgroundColor="{StaticResource enter_gray}" HorizontalOptions="FillAndExpand"/>
+                                <local:NoUnderlineEntry />
+
+                                <Switch IsToggled="true" OnColor="{StaticResource light_text}"
+                                        ThumbColor="{StaticResource progress_button_green}" HorizontalOptions="End"/>
+
+                            </StackLayout>
+
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="3">
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Height" HorizontalOptions="FillAndExpand"/>
+                                <Label Text="(cm)" HorizontalOptions="End"/>
+
+                            </StackLayout>
+                            
+
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView BackgroundColor="{StaticResource enter_gray}" HorizontalOptions="FillAndExpand"/>
+                                <local:NoUnderlineEntry />
+
+                                <Switch IsToggled="true" OnColor="{StaticResource light_text}"
+                                        ThumbColor="{StaticResource progress_button_green}" HorizontalOptions="End"/>
+
+                            </StackLayout>
+
+                        </StackLayout>
+                        
+                        
+
+          
+                        <sh:Shadows Grid.Row="4" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Next"
+                                    TextColor="{StaticResource light_text}"
+                                    BackgroundColor="{StaticResource progress_button_green}"
+                                    FontSize="15"/>
+
+
+                        </sh:Shadows> 
+
+                    </Grid>
+                </Frame> 
+            </sh:Shadows>
+            
+            <Label AbsoluteLayout.LayoutBounds="0.5,0.9" AbsoluteLayout.LayoutFlags="PositionProportional" Text="1/5" />
+
+
+
+        </AbsoluteLayout>
+
+
+
+    </ContentPage.Content>
+</ContentPage>

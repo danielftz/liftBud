@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liftBud.iOS", "liftBud.iOS.csproj", "{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+EndGlobal

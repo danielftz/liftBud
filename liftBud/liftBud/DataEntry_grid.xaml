@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="liftBud.DataEntry_grid"
+             Padding="20,15,20,0">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content >
+        <ScrollView>
+            <Grid RowSpacing="5"
+                  ColumnSpacing="20">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Grid.Row="0" Grid.Column="0" Text="ID" HorizontalTextAlignment="End"/>
+                <Entry x:Name="id" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Sex" HorizontalTextAlignment="End"/>
+                <Picker x:Name="sex" Grid.Row="1" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Female</x:String>
+                        <x:String>Male</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                </Picker>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Age" HorizontalTextAlignment="End"/>
+                <Entry x:Name="age" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Height(cm)" HorizontalTextAlignment="End"/>
+                <Entry x:Name="height" Grid.Row="3" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Weight(kg)" HorizontalTextAlignment="End"/>
+                <Entry x:Name="weight" Grid.Row="4" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Grid.Row="5" Grid.Column="0" Text ="Neck Measurement(cm)" HorizontalTextAlignment="End"/>
+                <Entry x:Name="neck_measurement" Grid.Row="5" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Grid.Row="6" Grid.Column="0" Text="Waist Measurement(cm)" HorizontalTextAlignment="End"/>
+                <Entry x:Name="waist_measurement" Grid.Row="6" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Grid.Row="7" Grid.Column="0" Text="Hip Measurement(cm)" HorizontalTextAlignment="End"/>
+                <Entry x:Name="hip_measurement" Grid.Row="7" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Grid.Row="8" Grid.Column="0" Text="Body fat(%)" HorizontalTextAlignment="End"/>
+                <Entry x:Name="bf_percent" Grid.Row="8" Grid.Column="1" Placeholder="leave blank if unkniwn" Keyboard="Numeric"/>
+
+                <Label Grid.Row="9" Grid.Column="0" Text="Model" HorizontalTextAlignment="End"/>
+                <Picker x:Name="model" Grid.Row="9" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Advanced Mode</x:String>
+                        <x:String>Normal Mode</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                </Picker>
+
+                <Label Grid.Row="10" Grid.Column="0" Text="Ideal Activity Level" HorizontalTextAlignment="End"/>
+                <Picker x:Name="ideal_activity_level" Grid.Row="10" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>I plan to sit around all day</x:String>
+                        <x:String>I plan to be a weekend warrior</x:String>
+                        <x:String>I am ready for regular exercise of moderate intensity</x:String>
+                        <x:String>I want to go hard</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                </Picker>
+
+                <Label Grid.Row="11" Grid.Column="0" Text="Meals Per Day" HorizontalTextAlignment="End"/>
+                <Picker x:Name="meals_per_day" Grid.Row="11" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                </Picker>
+
+                <Label Grid.Row="12" Grid.Column="0" Text="Goal" HorizontalTextAlignment="End"/>
+                <Picker x:Name="goal" Grid.Row="12" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Gain muscle steadily</x:String>
+                        <x:String>Stay fit and toned</x:String>
+                        <x:String>Lose weight gradually</x:String>
+                        <x:String>lose weight fast</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                </Picker>
+
+                <Label Grid.Row="13" Grid.Column="0" Grid.RowSpan="2" Text="Protein Slider" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Slider x:Name="protein_slider" Minimum="0" Maximum="100"  Grid.Row="13" Grid.Column="1" VerticalOptions="End" 
+                        MaximumTrackColor="DarkGray" MinimumTrackColor="Black">
+                    <Slider.Value>30</Slider.Value>
+                </Slider>
+                <Label x:Name="protein_percentage" Grid.Row="14" Grid.Column="1" HorizontalTextAlignment="Center"
+                       Text="{Binding Source={x:Reference protein_slider}, Path=Value}"/>
+
+                <Label Grid.Row="15" Grid.Column="0" Grid.RowSpan="2"  Text="Fat Slider" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Slider x:Name="fat_slider" Minimum="0" Maximum="100" Grid.Row="15" Grid.Column="1" 
+                        MaximumTrackColor="DarkGray" MinimumTrackColor="Black">
+                    <Slider.Value>50</Slider.Value>
+                </Slider>
+                <Label x:Name="fat_percentage" Grid.Row="16" Grid.Column="1" HorizontalTextAlignment="Center"
+                       Text="{Binding Source={x:Reference fat_slider},Path=Value}"/>
+
+                <Label Grid.Row="17" Grid.Column="0" Grid.RowSpan="2" Text="Carb Slider" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Slider x:Name="carb_slider" Minimum="0" Maximum="100" Grid.Row="17" Grid.Column="1" 
+                        MaximumTrackColor="DarkGray" MinimumTrackColor="Black">
+                    <Slider.Value>20</Slider.Value>
+                </Slider>
+                <Label x:Name="carb_percentage" Grid.Row="18" Grid.Column="1" HorizontalTextAlignment="Center"
+                       Text="{Binding Source={x:Reference carb_slider},Path=Value}"/>
+
+                <Label Grid.Row="19" Grid.Column="0" Text="Macro Percent" HorizontalTextAlignment="End"/>
+                <Label x:Name="macro_percent" Grid.Row="19" Grid.Column="1"/>
+
+                <Button x:Name="bt_auto_macro" Grid.Row="20" Grid.ColumnSpan="2" Text="Auto Macro" Clicked="bt_auto_macro_Clicked"/>
+                <Button x:Name="bt_submit" Grid.Row="21" Grid.ColumnSpan="2" Text="Submit" Clicked="bt_submit_Clicked"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

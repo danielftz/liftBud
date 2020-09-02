@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             xmlns:local="clr-namespace:liftBud.Model"
+             x:Class="liftBud.Setup4_page"
+             ControlTemplate="{StaticResource setup}"
+             NavigationPage.HasNavigationBar="False"
+             >
+     <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+
+    
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            
+           
+            <Label AbsoluteLayout.LayoutBounds="25,0.03" 
+                   AbsoluteLayout.LayoutFlags="YProportional" 
+                   Text="Just a little " FontSize="40" 
+                   TextColor="{StaticResource light_text}"/>
+
+            
+            <Label AbsoluteLayout.LayoutBounds="25,0.1" 
+                   AbsoluteLayout.LayoutFlags="YProportional" 
+                   Text="Select the options that best describe you" 
+                   FontSize="20" 
+                   TextColor="{StaticResource light_text}" Margin="0,0,31,0"/>
+            
+
+            <sh:Shadows AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.6" AbsoluteLayout.LayoutFlags="All"
+                        Shades="{sh:SingleShade Offset='0,10', BlurRadius=30, Opacity=0.85,Color=LightGray}">
+                
+
+                <Frame HasShadow="False">
+                    <ScrollView>
+                    <Grid RowSpacing="10" ColumnSpacing="25" Margin="25">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <StackLayout Grid.Row="0">
+                        
+                             <Label Text="What is your fitness goal?" HorizontalOptions="FillAndExpand"/>
+                        
+
+
+                        
+                             <sh:Shadows Grid.Row="1" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Lose fat fast"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+
+                       
+                             <sh:Shadows Grid.Row="2" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Lose fat gradually"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+
+
+                       
+                             <sh:Shadows Grid.Row="3" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Stay fit and toned"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+
+
+                        
+                             <sh:Shadows Grid.Row="4" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Clean bulk"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+
+                        </StackLayout>
+
+
+                        
+                        <StackLayout Grid.Row="5">
+                             <Label Text="What is your ideal activity level?" HorizontalOptions="FillAndExpand"/>
+                       
+
+
+                        
+                             <sh:Shadows Grid.Row="6" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="No exercise"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                      
+
+                       
+                             <sh:Shadows Grid.Row="7" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Weekend warrior"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                      
+
+
+                        
+                             <sh:Shadows Grid.Row="8" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Regular exercise"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+                            </StackLayout>
+
+
+
+                        <StackLayout Grid.Row="9">
+                             <Label Text="What is your availability?" HorizontalOptions="FillAndExpand"/>
+                       
+
+
+                        
+                             <sh:Shadows Grid.Row="10" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Monday"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+
+                       
+                             <sh:Shadows Grid.Row="11" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Tuesday"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                       
+
+
+                       
+                             <sh:Shadows Grid.Row="12" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Wednesday"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+                             <sh:Shadows Grid.Row="13" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Thursday"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                       
+                             <sh:Shadows Grid.Row="14" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Friday"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                        
+                             <sh:Shadows Grid.Row="15" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Saturday"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                       
+                             <sh:Shadows Grid.Row="16" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Sunday"
+                                    TextColor="{StaticResource dark_text}"
+                                    BackgroundColor="{StaticResource enter_gray}"
+                                    FontSize="15"/>
+                             </sh:Shadows> 
+
+                       
+
+                         </StackLayout>
+          
+                        <sh:Shadows Grid.Row="17" Shades="{sh:SingleShade Offset='0,5', BlurRadius=10, Opacity=0.7,Color=Gray}">
+                            <Button Text="Next"
+                                    TextColor="{StaticResource light_text}"
+                                    BackgroundColor="{StaticResource progress_button_green}"
+                                    FontSize="15"/>
+
+
+                        </sh:Shadows> 
+
+                    </Grid>
+                        </ScrollView>
+
+                </Frame> 
+            </sh:Shadows>
+            
+            <Label AbsoluteLayout.LayoutBounds="0.5,0.9" AbsoluteLayout.LayoutFlags="PositionProportional" Text="4/5" />
+
+
+
+        </AbsoluteLayout>
+
+
+
+    </ContentPage.Content>
+</ContentPage>

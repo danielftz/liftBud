@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients" 
+             xmlns:local="clr-namespace:liftBud.Model" 
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="liftBud.FoodPreference"
+             NavigationPage.HasNavigationBar="True"
+             >
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="{StaticResource dark_text}"/>
+        </Style>
+    </ContentPage.Resources>
+
+
+
+
+    <ContentPage.Content>
+        <TableView Intent="Settings">
+		<TableView.Root>
+			<TableSection Title="FOOD RESTRICTIONS">
+				<SwitchCell Text="None" />
+				<SwitchCell Text="Pescetarian" />
+				<SwitchCell Text="Vegerarian" />
+			</TableSection>
+			<TableSection Title="TRY TO AVOID">
+				<SwitchCell Text="Pork" />
+				<SwitchCell Text="Beef" />
+				<SwitchCell Text="Poultry" />
+				<SwitchCell Text="Fish" />
+				<SwitchCell Text="Seafood" />
+				<SwitchCell Text="Gluten" />
+				<SwitchCell Text="Lactose" />				
+			</TableSection>
+		</TableView.Root>
+	</TableView>
+    </ContentPage.Content>
+</ContentPage>
