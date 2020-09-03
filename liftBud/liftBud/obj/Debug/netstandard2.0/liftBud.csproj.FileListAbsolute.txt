@@ -41,3 +41,4 @@ E:/prj/liftBud/liftBud/liftBud/obj/Debug/netstandard2.0/liftBud.pdb
 /Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/obj/Debug/netstandard2.0/Setup1_page.xaml.g.cs
 /Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/obj/Debug/netstandard2.0/Setup3_page.xaml.g.cs
 /Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/obj/Debug/netstandard2.0/Setup4_page.xaml.g.cs
+/Users/vanwu/Desktop/liftBud-master/liftBud/liftBud/obj/Debug/netstandard2.0/Setup5_page.xaml.g.cs

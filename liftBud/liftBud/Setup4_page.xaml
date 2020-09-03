@@ -26,7 +26,7 @@
            
             <Label AbsoluteLayout.LayoutBounds="25,0.03" 
                    AbsoluteLayout.LayoutFlags="YProportional" 
-                   Text="Just a little " FontSize="40" 
+                   Text="Just a little more" FontSize="40" 
                    TextColor="{StaticResource light_text}"/>
 
             

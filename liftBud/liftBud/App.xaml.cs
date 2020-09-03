@@ -12,7 +12,7 @@ namespace liftBud
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Setup4_page());
+            MainPage = new NavigationPage(new Setup5_page());
 
             // MainPage = new NavigationPage(new LoginPage());
         }

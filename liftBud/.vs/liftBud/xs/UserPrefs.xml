@@ -1,20 +1,14 @@
 ﻿<Properties StartupConfiguration="{F79F1E5A-CA65-4896-AD34-FB6BEF3F3BBC}|Default">
   <MonoDevelop.Ide.ItemProperties.liftBud.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="liftBud/Setup4_page.xaml">
-    <Files>
-      <File FileName="liftBud/Setup4_page.xaml" Line="251" Column="1" />
-      <File FileName="liftBud/Setup4_page.xaml.cs" Line="1" Column="1" />
-      <File FileName="liftBud/App.xaml" Line="1" Column="1" />
-      <File FileName="liftBud/Setup3_page.xaml" Line="1" Column="1" />
-      <File FileName="liftBud.iOS/Main.cs" Line="17" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="liftBud" expanded="True">
             <Node name="liftBud" expanded="True">
               <Node name="App.xaml" expanded="True" />
-              <Node name="Setup4_page.xaml" selected="True" />
+              <Node name="Setup4_page.xaml" expanded="True" selected="True" />
+              <Node name="Setup5_page.xaml" expanded="True" />
             </Node>
             <Node name="liftBud.iOS" expanded="True" />
           </Node>
